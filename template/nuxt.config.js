@@ -1,10 +1,5 @@
 module.exports = {
   /*
-  ** Single Page Application mode
-  ** Means no SSR
-  */
-  mode: 'spa',
-  /*
   ** Headers of the page
   */
   head: {
@@ -27,8 +22,8 @@ module.exports = {
 
   plugins: [
     // ssr: false to only include it on client-side
-    { src: '~/plugins/event-bus.js' },
-    { src: '~/plugins/ticker.js' }
+    { src: '~/plugins/event-bus.js', ssr: false },
+    { src: '~/plugins/ticker.js', ssr: false }
   ],
 
   /*

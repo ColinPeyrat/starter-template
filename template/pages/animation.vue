@@ -6,8 +6,7 @@
 </template>
 
 <script>
-import TweenMax from 'gsap/TweenMax';
-
+import TweenMax from 'gsap'
 import tickable from '~/mixins/tickable';
 
 export default {
@@ -22,8 +21,6 @@ export default {
   },
   methods: {
     onTick() {
-      console.log('tick');
-
       const amplitude = 200;
       const x = Math.cos(this.time * 0.03) * amplitude;
       const y = Math.cos(this.time * 0.05) * amplitude;
